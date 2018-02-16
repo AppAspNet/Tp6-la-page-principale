@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebFormGestionGroupes.aspx.cs" Inherits="WebApplicationGestionStagiaires.Presentation.GroupesPresentation.WebFormGestionGroupes" %>
 
+<%@ Register src="../menu.ascx" tagname="menu" tagprefix="uc1" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -8,7 +10,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <div>
+             <uc1:menu ID="menu1" runat="server" />
+        </div>
     <div>
+
     
         <table style="width:100%;">
             <tr>
@@ -39,6 +45,7 @@
                                 <asp:Label ID="lblDateModification" runat="server" Text=""></asp:Label>
                             </td>
                         </tr>
+                       
                     </table>
                 </td>
                 <td>

@@ -19,6 +19,13 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Presentation\GroupesPresentation\WebFormGestionGroupes.aspx" />
+    <Content Include="Presentation\menu.ascx" />
     <Content Include="Presentation\StagiairesPresentation\WebFormInterfaceMiseAJourStagiaires.aspx" />
     <Content Include="Presentation\StagiairesPresentation\WebFormRechercheParGroupe.aspx" />
     <Content Include="Web.config" />
@@ -79,6 +87,13 @@
     </Compile>
     <Compile Include="Presentation\GroupesPresentation\WebFormGestionGroupes.aspx.designer.cs">
       <DependentUpon>WebFormGestionGroupes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\menu.ascx.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\menu.ascx.designer.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
     </Compile>
     <Compile Include="Presentation\StagiairesPresentation\WebFormInterfaceMiseAJourStagiaires.aspx.cs">
       <DependentUpon>WebFormInterfaceMiseAJourStagiaires.aspx</DependentUpon>
