@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMasterPage.master.cs" Inherits="WebApplicationGestionStagiaires.Presentation.MainMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- CSS -->
+    <!-- Javascript -->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="main_menu">
+
+            <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal"
+                StaticSubMenuIndent="16px">
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/WebFormApplication.aspx" Text="Application"
+                        Value="Application"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Presentation/StagiairesPresentation/WebFormInterfaceMiseAJourStagiaires.aspx"
+                        Text="Stagiaires" Value="Stagiaires"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Presentation/GroupesPresentation/WebFormGestionGroupes.aspx"
+                        Text="Groupes" Value="Groupes"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Presentation/StagiairesPresentation/WebFormRechercheParGroupe.aspx"
+                        Text="Recherche" Value="Recherche"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+        </div>
+        <div id="main_content">
+            <asp:ContentPlaceHolder ID="mainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="footer">Pied de la page</div>
+    </form>
+</body>
+</html>

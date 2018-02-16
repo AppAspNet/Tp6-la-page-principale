@@ -19,6 +19,13 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -59,6 +66,7 @@
     <Content Include="Presentation\GroupesPresentation\WebFormGestionGroupes.aspx" />
     <Content Include="Presentation\StagiairesPresentation\WebFormInterfaceMiseAJourStagiaires.aspx" />
     <Content Include="Presentation\StagiairesPresentation\WebFormRechercheParGroupe.aspx" />
+    <Content Include="Presentation\WebForm1.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -80,6 +88,13 @@
     <Compile Include="Presentation\GroupesPresentation\WebFormGestionGroupes.aspx.designer.cs">
       <DependentUpon>WebFormGestionGroupes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\MainMasterPage.Master.cs">
+      <DependentUpon>MainMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\MainMasterPage.Master.designer.cs">
+      <DependentUpon>MainMasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\StagiairesPresentation\WebFormInterfaceMiseAJourStagiaires.aspx.cs">
       <DependentUpon>WebFormInterfaceMiseAJourStagiaires.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -94,6 +109,13 @@
     <Compile Include="Presentation\StagiairesPresentation\WebFormRechercheParGroupe.aspx.designer.cs">
       <DependentUpon>WebFormRechercheParGroupe.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebFormApplication.aspx.cs">
       <DependentUpon>WebFormApplication.aspx</DependentUpon>
@@ -106,6 +128,7 @@
   <ItemGroup />
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
+    <Content Include="Presentation\MainMasterPage.Master" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
